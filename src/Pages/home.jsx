@@ -21,6 +21,7 @@ export default function Home() {
 
   const [active, setActive] = useState("all");
   const [apiData, setApiData] = useState([]);
+  
   const [filterData, setFilterData] = useState([]);
 
   async function fetchData() {
