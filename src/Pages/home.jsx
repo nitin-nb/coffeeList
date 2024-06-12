@@ -38,7 +38,7 @@ export default function Home() {
   }
 
   const filteredData = (active) => {
-    if (active === "availNow"){
+    if (active === "availableNow"){
       const availData = apiData.filter((item) => item.available === true);
       setFilterData(availData);
     }else if (active === "all"){
@@ -51,7 +51,7 @@ export default function Home() {
   }
 
   const filterAvail = () =>{
-    setActive("availNow");
+    setActive("availableNow");
   }
 
   useEffect(() => {
@@ -131,7 +131,7 @@ export default function Home() {
               onClick={filterAvail}
               size="medium"
               sx={{
-                backgroundColor: active === "availNow" ? "#6F757C" : "",
+                backgroundColor: active === "availableNow" ? "#6F757C" : "",
                 color: "white",
                 textTransform: "initial",
                 fontSize: "0.875rem",
